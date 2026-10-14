@@ -1,0 +1,145 @@
+/* =========================
+   1. BODY
+========================= */
+
+body {
+    margin: 0;
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+    background-color: rgb(25, 25, 164);
+    color: azure;
+}
+
+
+/* =========================
+   2. LOGO
+========================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(52, 51, 65);
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* =========================
+   3. NAVIGATION / MENU
+========================= */
+
+nav {
+    background-color: rgb(214, 214, 214);
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    padding: 0px;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+}
+
+a:hover {
+    background-color: rgb(50, 52, 135);
+    color: aliceblue;
+}
+
+
+/* =========================
+   4. ELECTRONIC PRODUCT
+========================= */
+
+.electronic-product {
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-bottom: 30px;
+}
+
+.buy-now img {
+    width: 90px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.product-info p {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+.the-product img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   5. PRODUCT SECTION & CARDS
+========================= */
+
+/* Container chứa danh sách sản phẩm xếp 1 hàng, tự xuống dòng */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Thẻ từng sản phẩm có kích thước cố định bằng nhau */
+.group {
+    background-color: rgb(47, 37, 232);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* Kích thước đồng nhất cho tất cả các thẻ */
+    width: 220px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.group img {
+    width: 125px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.group h3 {
+    margin: 10px 0 5px 0;
+}
+
+.group p {
+    margin: 0;
+}
+
+.group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px 10px cornflowerblue;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
